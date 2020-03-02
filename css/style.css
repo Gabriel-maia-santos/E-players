@@ -35,13 +35,13 @@ a{
 .container{
     width: 80%;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 header .container{
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 header ul{
@@ -115,4 +115,42 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ligas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 0px;
+}
+
+.ligas img{
+    height: 120px;
+}
+
+.ligas h4{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.ligas h3{
+    font-size: 90px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+
+.ligas div{
+    margin-bottom: 35px;
+    text-align: start;
+}
+
+.sobre{
+    background-image: url("../images/Teams/T6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 200px;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 }
