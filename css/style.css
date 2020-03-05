@@ -53,6 +53,8 @@ header ul{
 
 header nav a:hover{
     border-bottom: solid 2px var(--purple);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
 header nav{
