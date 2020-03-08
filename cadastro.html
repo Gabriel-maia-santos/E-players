@@ -14,10 +14,15 @@
 
     <header>
         <div class="container">
-            <a href="index.html" title="Acessar a página inicial do site">
-                <img src="images/Logo.svg" alt="Logo do site E-Players">
-            </a>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html" title="Acessar a página inicial do site">
+                    <img src="images/Logo.svg" alt="Logo do site E-Players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="Acessar página inicial">início</a></li>
                     <li><a href="#sobre" title="Acessar sessão sobre o projeto">sobre</a></li>
@@ -50,7 +55,7 @@
                     </div>
                 </div>
                 <!--Fim em andamento-->
-                <div class="Proximas_partidas">
+                <div class="proximas_partidas">
                     <div class="partida">
                         <h2>Próximas Partidas</h2>
                         <div>
@@ -95,19 +100,8 @@
                         </div>
                         12:30h
                     </div>
-
-                    <div class="partida">
-                        <div>
-                            <strong>FLA</strong>
-                            <img src="images/FLA.png" alt="Emblema do Flamengo">
-                            <i>VS</i>
-                            <img src="images/SK.png" alt="Emblema da SK">
-                            <strong>SK</strong>
-                        </div>
-                        12:30h
-                    </div>
+                </div>
             </div>
-        </div>
         </section>
         <!--fim da section-->
 
@@ -207,6 +201,18 @@
 
         <p> © COPYRIGHT - Todos os direitos reservados - SENAI de Informática E-Sports</p>
     </footer>
+    <script>
+        function botaoMenu() {
+            var m = document.getElementById("menu");
+            if (m.style.display == "block") {
+                m.style.display = "none";
+            } else {
+                m.style.display = "block";
+
+            }
+        }
+    </script>
+
 </body>
 
 </html>
